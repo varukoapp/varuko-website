@@ -342,3 +342,44 @@ footer .brand { color: var(--ink); }
   }
 }
 
+
+/* Phone-sized product previews */
+.showcase-grid {
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  align-items: start;
+}
+
+.app-shot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-shot img {
+  width: auto;
+  max-width: 320px;
+  height: auto;
+  max-height: 680px;
+  object-fit: contain;
+}
+
+.app-shot figcaption {
+  width: min(100%, 320px);
+}
+
+@media (max-width: 760px) {
+  .app-shot {
+    flex: 0 0 min(78vw, 330px);
+  }
+
+  .app-shot img {
+    width: 100%;
+    max-width: 290px;
+    max-height: none;
+  }
+
+  .app-shot figcaption {
+    width: min(100%, 290px);
+  }
+}
+
