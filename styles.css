@@ -82,3 +82,263 @@ footer .brand { color: var(--ink); }
   @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
   @keyframes floatMark { 0%,100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-10px) rotate(-1deg); } }
 }
+
+/* Beta + product showcase */
+.beta-section,
+.product-showcase {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.beta-section {
+  padding: 96px 0 56px;
+}
+
+.beta-copy {
+  max-width: 760px;
+  padding: 40px;
+  border: 1px solid rgba(20, 20, 20, 0.08);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.58);
+  backdrop-filter: blur(10px);
+}
+
+.beta-copy h2,
+.showcase-heading h2 {
+  margin: 10px 0 16px;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.beta-copy p:not(.eyebrow),
+.showcase-heading p:not(.eyebrow) {
+  max-width: 700px;
+  color: #60615c;
+  line-height: 1.7;
+}
+
+.beta-copy .primary-action {
+  margin-top: 24px;
+}
+
+.product-showcase {
+  padding: 72px 0 112px;
+}
+
+.showcase-heading {
+  max-width: 820px;
+  margin-bottom: 40px;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.app-shot {
+  margin: 0;
+  padding: 18px;
+  border: 1px solid rgba(20, 20, 20, 0.08);
+  border-radius: 28px;
+  background: #efefe9;
+  overflow: hidden;
+}
+
+.app-shot img {
+  display: block;
+  width: 100%;
+  max-height: 760px;
+  object-fit: contain;
+  border-radius: 20px;
+  background: #0a0c0b;
+}
+
+.app-shot figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 4px 4px;
+}
+
+.app-shot figcaption strong {
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+}
+
+.app-shot figcaption span {
+  color: #70716c;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .beta-section {
+    padding-top: 64px;
+  }
+
+  .beta-copy {
+    padding: 28px 22px;
+  }
+
+  .product-showcase {
+    padding-top: 56px;
+    padding-bottom: 80px;
+  }
+
+  .showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .app-shot {
+    padding: 12px;
+    border-radius: 22px;
+  }
+
+  .app-shot img {
+    border-radius: 16px;
+    max-height: none;
+  }
+}
+
+
+/* Refined beta showcase */
+.beta-section {
+  padding: 88px 0 48px;
+}
+
+.beta-copy {
+  max-width: none;
+  padding: clamp(28px, 5vw, 52px);
+  border: 1px solid rgba(75, 80, 60, 0.12);
+  border-radius: 32px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,.72),
+      rgba(238,239,229,.78)
+    );
+  box-shadow: 0 24px 70px rgba(35, 38, 28, 0.06);
+}
+
+.beta-copy h2,
+.showcase-heading h2 {
+  color: #20211d;
+}
+
+.product-showcase {
+  padding: 68px 0 110px;
+}
+
+.showcase-heading {
+  max-width: 720px;
+}
+
+.showcase-grid {
+  gap: 28px;
+}
+
+.app-shot {
+  padding: 14px;
+  border: 1px solid rgba(67, 72, 54, 0.10);
+  border-radius: 32px;
+  background: #f1f1ea;
+  box-shadow: 0 18px 50px rgba(31, 34, 26, 0.06);
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.app-shot:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 26px 65px rgba(31, 34, 26, 0.10);
+}
+
+.app-shot img {
+  border-radius: 24px;
+  background: #111310;
+}
+
+.app-shot figcaption {
+  padding: 20px 8px 8px;
+}
+
+.app-shot figcaption strong {
+  color: #24251f;
+  font-size: 1.05rem;
+}
+
+.app-shot figcaption span {
+  color: #717269;
+}
+
+/* Mobile: swipe through screenshots instead of a long stack */
+@media (max-width: 760px) {
+  .beta-section,
+  .product-showcase {
+    width: min(100% - 32px, 1180px);
+  }
+
+  .beta-section {
+    padding-top: 56px;
+  }
+
+  .beta-copy {
+    border-radius: 24px;
+    padding: 28px 22px;
+  }
+
+  .beta-copy h2,
+  .showcase-heading h2 {
+    line-height: 1.04;
+  }
+
+  .product-showcase {
+    padding-top: 48px;
+    padding-bottom: 76px;
+  }
+
+  .showcase-heading {
+    margin-bottom: 28px;
+  }
+
+  .showcase-grid {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 2px 18px 18px 2px;
+    margin-right: -16px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .showcase-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .app-shot {
+    flex: 0 0 min(82vw, 350px);
+    scroll-snap-align: start;
+    padding: 10px;
+    border-radius: 24px;
+  }
+
+  .app-shot:hover {
+    transform: none;
+  }
+
+  .app-shot img {
+    width: 100%;
+    max-height: 620px;
+    border-radius: 18px;
+  }
+
+  .app-shot figcaption {
+    padding: 16px 6px 8px;
+  }
+}
+
