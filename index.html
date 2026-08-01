@@ -4,14 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f7f7f3" />
-  <meta name="description" content="Varuko brings athletes and coaches together through structured training, measurable progress, and accountability." />
-  <title>Varuko — Achieve More. Together.</title>
+  <meta
+    name="description"
+    content="Varuko connects athletes and trainers through structured programming, measurable progress, and accountability."
+  />
+  <title>Varuko — Train Better. Coach Smarter.</title>
+
   <link rel="icon" href="assets/varuko-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Varuko home">
@@ -19,102 +27,350 @@
       <span>VARUKO</span>
     </a>
 
-    <a class="contact-link" href="#contact">Contact the founder <span aria-hidden="true">→</span></a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#product">Product</a>
+      <a href="#roadmap">Roadmap</a>
+      <a class="nav-cta" href="#early-access">Get Early Access</a>
+    </nav>
   </header>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero hero-v2">
       <div class="hero-copy">
-        <p class="eyebrow">A new training platform is taking shape.</p>
-        <h1>Achieve More.<br><span>Together.</span></h1>
-        <p class="mission">Helping people achieve more by helping them do it together.</p>
-        <p class="supporting-copy">Varuko is being built to give athletes and coaches one thoughtfully designed place to plan training, measure meaningful progress, and stay connected.</p>
+        <p class="eyebrow">A connected training platform</p>
+
+        <h1>
+          Train better.<br />
+          <span>Coach smarter.</span>
+        </h1>
+
+        <p class="supporting-copy hero-summary">
+          One platform connecting athletes and trainers through structured
+          programming, measurable progress, and accountability.
+        </p>
+
         <div class="hero-actions">
-          <a class="primary-action" href="#beta">Join the Beta Waitlist <span aria-hidden="true">→</span></a>
+          <a class="primary-action" href="#early-access">
+            Get Early Access <span aria-hidden="true">→</span>
+          </a>
+          <a class="secondary-action" href="#product">Explore Varuko</a>
         </div>
-        <div class="audience-line" aria-label="Varuko audiences">
-          <span>For athletes</span>
-          <i aria-hidden="true"></i>
-          <span>For coaches</span>
-          <i aria-hidden="true"></i>
-          <span>Built together</span>
-        </div>
+
+        <p class="launch-note">
+          Private beta invitations begin soon.
+        </p>
       </div>
 
       <div class="hero-mark" aria-label="Varuko brand mark">
         <div class="mark-halo"></div>
         <div class="mark-frame">
-          <img src="assets/varuko-icon.png" alt="Varuko checkmark V logo" />
+          <img
+            src="assets/varuko-icon.png"
+            alt="Varuko green V logo"
+          />
         </div>
         <p>Progress. Partnership. Achievement.</p>
       </div>
     </section>
 
-    <section class="principles" aria-label="Varuko principles">
-      <article><span>01</span><h2>Train with purpose.</h2><p>Structure the work before the session begins.</p></article>
-      <article><span>02</span><h2>Stay connected.</h2><p>Athletes and coaches working from the same plan.</p></article>
-      <article><span>03</span><h2>Measure progress.</h2><p>Turn consistent effort into clear, useful insight.</p></article>
+    <section class="benefits" aria-label="Why Varuko">
+      <article>
+        <span>01</span>
+        <h2>One connected platform.</h2>
+        <p>
+          Programming, progress, communication, and coaching tools without
+          switching between disconnected systems.
+        </p>
+      </article>
+
+      <article>
+        <span>02</span>
+        <h2>Better coaching.</h2>
+        <p>
+          Assign training, manage athletes, review activity, and keep the
+          coaching relationship organized.
+        </p>
+      </article>
+
+      <article>
+        <span>03</span>
+        <h2>Measurable progress.</h2>
+        <p>
+          Turn consistent effort into useful information that athletes and
+          trainers can act on together.
+        </p>
+      </article>
     </section>
 
-    <section class="beta-section" id="beta">
-      <div class="beta-copy">
-        <p class="eyebrow">Beta access</p>
-        <h2>Be part of the first Varuko beta.</h2>
-        <p>Varuko is preparing for its first beta release. Athletes and trainers can join the waitlist to get early access, test the platform, and help shape what comes next.</p>
-        <a class="primary-action" href="mailto:info@varuko.com?subject=Varuko%20Beta%20Waitlist&body=I%27d%20like%20to%20join%20the%20Varuko%20beta%20waitlist.">
-          Join the Beta Waitlist <span aria-hidden="true">→</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="product-showcase" aria-label="Inside Varuko">
-      <div class="showcase-heading">
+    <section class="product-showcase" id="product" aria-label="Inside Varuko">
+      <div class="section-heading">
         <p class="eyebrow">Inside Varuko</p>
-        <h2>Train better. Coach smarter.</h2>
-        <p>Track your progress or guide the people you coach — inside one connected training platform.</p>
+        <h2>Designed for both sides of training.</h2>
+        <p>
+          Athletes and trainers get focused experiences while working from one
+          connected platform.
+        </p>
       </div>
 
-      <div class="showcase-grid">
-        <figure class="app-shot app-shot-featured">
-          <img src="assets/athlete-stealth.png" alt="Varuko athlete dashboard in Stealth theme" />
+      <div class="product-layout">
+        <figure class="app-shot app-shot-primary">
+          <div class="phone-stage">
+            <img
+              src="assets/athlete-stealth.png"
+              alt="Varuko athlete home dashboard"
+            />
+          </div>
           <figcaption>
-            <strong>Athlete Home</strong>
-            <span>Goals, progress, discovery, and motivation in one place.</span>
+            <strong>Athlete Experience</strong>
+            <span>
+              Track goals, training activity, progress, and coaching connections
+              from one personal dashboard.
+            </span>
           </figcaption>
         </figure>
 
-        <figure class="app-shot app-shot-featured">
-          <img src="assets/trainer-stealth.png" alt="Varuko trainer dashboard in Stealth theme" />
-          <figcaption>
-            <strong>Trainer Home</strong>
-            <span>Assign workouts, manage athletes, and operate from one coaching hub.</span>
-          </figcaption>
-        </figure>
+        <div class="supporting-shots">
+          <figure class="app-shot">
+            <div class="phone-stage">
+              <img
+                src="assets/trainer-stealth.png"
+                alt="Varuko trainer home dashboard"
+              />
+            </div>
+            <figcaption>
+              <strong>Trainer Experience</strong>
+              <span>
+                Manage athletes, assign workouts, review activity, and organize
+                coaching operations.
+              </span>
+            </figcaption>
+          </figure>
 
-        <figure class="app-shot">
-          <img src="assets/roster-coaches.png" alt="Varuko trainer finder and coaching discovery screen" />
-          <figcaption>
-            <strong>Find the Right Trainer</strong>
-            <span>Discover coaches, compare fit, and connect with the right person for your goals.</span>
-          </figcaption>
-        </figure>
+          <figure class="app-shot">
+            <div class="phone-stage">
+              <img
+                src="assets/roster-coaches.png"
+                alt="Varuko trainer discovery screen"
+              />
+            </div>
+            <figcaption>
+              <strong>Trainer Discovery</strong>
+              <span>
+                Discover coaches, compare fit, and connect around specific
+                training goals.
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-        <figure class="app-shot">
-          <img src="assets/settings-royalty.png" alt="Varuko settings in Royalty theme" />
-          <figcaption>
-            <strong>Your Controls</strong>
-            <span>Customize routines, privacy, discoverability, and your training experience.</span>
-          </figcaption>
-        </figure>
+    <section class="early-access-section" id="early-access">
+      <div class="early-access-intro">
+        <p class="eyebrow">Private beta</p>
+        <h2>Help shape what Varuko becomes.</h2>
+        <p>
+          Join the first group of athletes and trainers testing the platform
+          before public release.
+        </p>
+
+        <ul class="access-benefits">
+          <li>Early access before public launch</li>
+          <li>Direct influence on product improvements</li>
+          <li>Priority support throughout the beta</li>
+        </ul>
+      </div>
+
+      <div class="beta-copy">
+        <form class="waitlist-form" id="waitlist-form">
+          <div class="waitlist-fields">
+            <label>
+              <span>Name</span>
+              <input
+                type="text"
+                name="name"
+                autocomplete="name"
+                maxlength="80"
+                required
+              />
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input
+                type="email"
+                name="email"
+                autocomplete="email"
+                maxlength="160"
+                required
+              />
+            </label>
+
+            <label>
+              <span>I am joining as</span>
+              <select name="role" required>
+                <option value="">Choose one</option>
+                <option value="athlete">Athlete</option>
+                <option value="trainer">Trainer</option>
+              </select>
+            </label>
+
+            <label class="waitlist-honeypot" aria-hidden="true">
+              <span>Website</span>
+              <input
+                type="text"
+                name="website"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </label>
+          </div>
+
+          <button class="primary-action waitlist-submit" type="submit">
+            <span>Get Early Access</span>
+            <span aria-hidden="true">→</span>
+          </button>
+
+          <p
+            class="waitlist-status"
+            id="waitlist-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+
+          <small class="privacy-note">
+            Beta updates only. No spam or public email display.
+          </small>
+        </form>
+      </div>
+    </section>
+
+    <section class="roadmap-section" id="roadmap">
+      <div class="section-heading">
+        <p class="eyebrow">Platform progress</p>
+        <h2>Built in public. Improved through use.</h2>
+        <p>
+          The foundation is complete. The next phase is focused testing with
+          athletes and trainers.
+        </p>
+      </div>
+
+      <div class="roadmap-list">
+        <article class="roadmap-item complete">
+          <span class="roadmap-marker">✓</span>
+          <div>
+            <small>Complete</small>
+            <h3>Core Platform</h3>
+            <p>Authentication, profiles, workout tracking, and shared data.</p>
+          </div>
+        </article>
+
+        <article class="roadmap-item complete">
+          <span class="roadmap-marker">✓</span>
+          <div>
+            <small>Complete</small>
+            <h3>Athlete and Trainer Dashboards</h3>
+            <p>Role-specific tools connected through one platform.</p>
+          </div>
+        </article>
+
+        <article class="roadmap-item complete">
+          <span class="roadmap-marker">✓</span>
+          <div>
+            <small>Complete</small>
+            <h3>Trainer Discovery</h3>
+            <p>Tools for athletes to find and connect with trainers.</p>
+          </div>
+        </article>
+
+        <article class="roadmap-item current">
+          <span class="roadmap-marker">•</span>
+          <div>
+            <small>Current phase</small>
+            <h3>Private Beta</h3>
+            <p>Real-world testing, feedback, reliability, and refinement.</p>
+          </div>
+        </article>
+
+        <article class="roadmap-item future">
+          <span class="roadmap-marker">○</span>
+          <div>
+            <small>Next</small>
+            <h3>Public Launch</h3>
+            <p>Broader availability after the beta experience is validated.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="coming-section">
+      <div class="section-heading">
+        <p class="eyebrow">Coming during beta</p>
+        <h2>The platform will keep moving.</h2>
+      </div>
+
+      <div class="coming-grid">
+        <article>
+          <h3>Performance Analytics</h3>
+          <p>Clearer insight into consistency and long-term development.</p>
+        </article>
+
+        <article>
+          <h3>Workout Builder</h3>
+          <p>More flexible programming and repeatable training structures.</p>
+        </article>
+
+        <article>
+          <h3>Messaging</h3>
+          <p>Focused communication between athletes and trainers.</p>
+        </article>
+
+        <article>
+          <h3>Team Management</h3>
+          <p>Better organization for groups, rosters, and shared programs.</p>
+        </article>
+
+        <article>
+          <h3>Exercise Library</h3>
+          <p>Reusable movements, templates, and training references.</p>
+        </article>
+
+        <article>
+          <h3>Training Intelligence</h3>
+          <p>Smarter recommendations built from real training patterns.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="updates-section">
+      <div class="section-heading">
+        <p class="eyebrow">Latest development</p>
+        <h2>Recent platform updates.</h2>
+      </div>
+
+      <div class="updates-card">
+        <time datetime="2026-07-31">July 31, 2026</time>
+
+        <ul>
+          <li>Beta access registration launched</li>
+          <li>Trainer discovery experience added</li>
+          <li>Trainer roster organization improved</li>
+          <li>Mobile layout and app presentation refined</li>
+          <li>Expanded interface customization added</li>
+        </ul>
       </div>
     </section>
 
     <section class="contact-section" id="contact">
       <div>
         <p class="eyebrow">Contact</p>
-        <h2>Reach the person building Varuko.</h2>
-        <p>Questions, early interest, partnership ideas, and investor inquiries can be sent directly to the founder.</p>
+        <h2>Questions, partnerships, or media inquiries.</h2>
+        <p>
+          Contact Varuko directly for product questions, collaboration, and
+          business inquiries.
+        </p>
       </div>
+
       <a class="email-card" href="mailto:info@varuko.com">
         <small>Email</small>
         <strong>info@varuko.com</strong>
@@ -128,9 +384,14 @@
       <img src="assets/varuko-icon.png" alt="" />
       <span>VARUKO</span>
     </a>
+
+    <p class="footer-statement">
+      Built for athletes. Built for trainers. Built together.
+    </p>
+
     <p>© <span id="year"></span> Varuko. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>

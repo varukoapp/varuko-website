@@ -90,6 +90,6 @@ form?.addEventListener("submit", async event => {
   } finally {
     submitButton.disabled = false;
     submitButton.querySelector("span").textContent =
-      "Join the Beta Waitlist";
+      "Get Early Access";
   }
 });
