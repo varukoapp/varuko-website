@@ -2090,3 +2090,24 @@ html {
   }
 }
 
+
+/* WEB BETA LOGIN */
+
+.web-beta-link {
+  color: #111827;
+  font-weight: 700;
+}
+
+.web-beta-link:hover {
+  color: #159447;
+}
+
+.web-beta-action {
+  border-color: #159447;
+  color: #147f3f;
+}
+
+.web-beta-action:hover {
+  background: #eaf7ee;
+  color: #116f37;
+}
