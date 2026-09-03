@@ -43,6 +43,7 @@ form?.addEventListener("submit", async event => {
   const name = String(formData.get("name") || "").trim();
   const email = String(formData.get("email") || "").trim().toLowerCase();
   const role = String(formData.get("role") || "");
+  const platform = String(formData.get("platform") || "");
   const website = String(formData.get("website") || "").trim();
 
   // Silent bot trap.
@@ -51,7 +52,7 @@ form?.addEventListener("submit", async event => {
   status.textContent = "";
   status.removeAttribute("data-state");
 
-  if (!name || !email || !["athlete", "trainer"].includes(role)) {
+  if (!name || !email || !["athlete", "trainer"].includes(role) || !["ios", "android", "both"].includes(platform)) {
     status.textContent = "Please complete all required fields.";
     status.dataset.state = "error";
     return;
@@ -67,6 +68,7 @@ form?.addEventListener("submit", async event => {
       name,
       email,
       role,
+      platform,
       source: "varuko.com",
       status: "waiting",
       createdAt: serverTimestamp()
@@ -74,7 +76,7 @@ form?.addEventListener("submit", async event => {
 
     form.reset();
     status.textContent =
-      "Welcome to the Varuko Beta. You're officially on the waitlist. We'll email you as soon as your invitation is ready.";
+      "You're in. We'll send your Varuko beta access and testing information to this email.";
   } catch (error) {
     console.error("Waitlist submission failed:", error);
 
@@ -90,6 +92,6 @@ form?.addEventListener("submit", async event => {
   } finally {
     submitButton.disabled = false;
     submitButton.querySelector("span").textContent =
-      "Get Early Access";
+      "Join the Beta";
   }
 });
