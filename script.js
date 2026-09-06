@@ -78,7 +78,6 @@ form?.addEventListener("submit", async event => {
     status.textContent =
       "You're in. We'll send your Varuko beta access and testing information to this email.";
   } catch (error) {
-    console.error("Waitlist submission failed:", error);
 
     if (error?.code === "permission-denied") {
       status.textContent =
