@@ -2111,3 +2111,20 @@ html {
   background: #eaf7ee;
   color: #116f37;
 }
+
+
+/* Public legal and support links */
+.footer-legal-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin: 16px 0;
+}
+
+.footer-legal-links a {
+  color: inherit;
+  font-size: 0.875rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
