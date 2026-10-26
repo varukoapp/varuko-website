@@ -1,0 +1,1339 @@
+/* Varuko launch homepage */
+body {
+  background: #080d0b;
+  color: #f7faf7;
+}
+
+.launch-hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 760px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4%;
+  padding: 110px clamp(24px, 6vw, 100px);
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 75% 45%, rgba(29, 105, 61, .30), transparent 55%),
+    linear-gradient(115deg, #080d0b 10%, #12231a 65%, #070b09);
+}
+
+.launch-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(0,0,0,.35), transparent);
+}
+
+.launch-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.launch-eyebrow {
+  color: #57df87;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .23em;
+}
+
+.launch-hero h1 {
+  margin: 24px 0;
+  font-family: Manrope, sans-serif;
+  font-size: clamp(3.5rem, 6.2vw, 7rem);
+  line-height: 1.02;
+  letter-spacing: -.065em;
+  color: #fff;
+}
+
+.launch-hero h1 span {
+  color: #35cf70;
+}
+
+.launch-description {
+  max-width: 540px;
+  color: #c4d0c8;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.launch-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.launch-primary,
+.launch-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0 25px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.launch-primary {
+  background: #30c96b;
+  color: #07120b;
+  gap: 18px;
+}
+
+.launch-secondary {
+  border: 1px solid rgba(255,255,255,.35);
+  color: #fff;
+}
+
+.launch-devices {
+  position: relative;
+  min-height: 550px;
+}
+
+.launch-tablet,
+.launch-phone {
+  position: absolute;
+  overflow: hidden;
+  background: #111916;
+  border: 7px solid #25332b;
+  box-shadow: 0 30px 90px rgba(0,0,0,.65);
+}
+
+.launch-tablet {
+  width: 88%;
+  height: 390px;
+  top: 70px;
+  right: 0;
+  border-radius: 25px;
+  transform: rotate(5deg);
+}
+
+.launch-phone {
+  width: 42%;
+  height: 470px;
+  top: 10px;
+  left: 0;
+  border-radius: 36px;
+  transform: rotate(-8deg);
+}
+
+.launch-tablet img,
+.launch-phone img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .launch-hero {
+    grid-template-columns: 1fr;
+    padding-top: 85px;
+  }
+
+  .launch-devices {
+    min-height: 480px;
+  }
+
+  .launch-tablet {
+    width: 78%;
+    right: 3%;
+  }
+
+  .launch-phone {
+    width: 35%;
+    left: 8%;
+  }
+}
+
+@media (max-width: 560px) {
+  .launch-hero {
+    padding: 70px 22px 30px;
+  }
+
+  .launch-hero h1 {
+    font-size: clamp(3.1rem, 12vw, 4.7rem);
+  }
+
+  .launch-devices {
+    min-height: 330px;
+  }
+
+  .launch-tablet {
+    height: 230px;
+    top: 45px;
+  }
+
+  .launch-phone {
+    height: 300px;
+    top: 0;
+  }
+}
+
+/* Launch redesign: readable content below the hero */
+.benefits,
+.product-showcase,
+.early-access-section,
+.roadmap-section,
+.coming-section,
+.updates-section,
+.contact-section {
+  color: #f4f7f2;
+}
+
+.benefits h2,
+.product-showcase h2,
+.early-access-section h2,
+.roadmap-section h2,
+.coming-section h2,
+.updates-section h2,
+.contact-section h2 {
+  color: #ffffff;
+}
+
+.benefits p,
+.product-showcase p,
+.early-access-section p,
+.roadmap-section p,
+.coming-section p,
+.updates-section p,
+.contact-section p {
+  color: #b9c9bf;
+}
+
+/* Cinematic gym background */
+.launch-hero {
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(2, 10, 9, 0.88) 0%,
+      rgba(2, 10, 9, 0.56) 42%,
+      rgba(2, 10, 9, 0.10) 100%
+    ),
+    url("assets/gym-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.launch-hero-overlay {
+  background: linear-gradient(
+    0deg,
+    rgba(3, 12, 10, 0.65) 0%,
+    transparent 35%
+  );
+  pointer-events: none;
+}
+
+/* Properly proportioned device mockups */
+.launch-devices {
+  position: relative;
+  min-height: 560px;
+  perspective: 1400px;
+}
+
+.launch-tablet,
+.launch-phone {
+  height: auto;
+  overflow: hidden;
+  background: #050807;
+  border: 8px solid #28372e;
+  outline: 2px solid rgba(0, 0, 0, .85);
+  box-shadow:
+    0 35px 75px rgba(0, 0, 0, .7),
+    inset 0 0 0 2px rgba(255, 255, 255, .12);
+}
+
+.launch-tablet {
+  width: 88%;
+  aspect-ratio: 2732 / 2048;
+  top: 85px;
+  right: 0;
+  left: auto;
+  border-radius: 30px;
+  transform: rotate(5deg);
+}
+
+.launch-phone {
+  width: 39%;
+  aspect-ratio: 1284 / 2778;
+  top: 5px;
+  left: 0;
+  border-radius: 42px;
+  border-width: 9px;
+  transform: rotate(-8deg);
+  z-index: 2;
+}
+
+.launch-tablet img,
+.launch-phone img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .launch-devices {
+    min-height: 490px;
+  }
+  .launch-tablet {
+    width: 78%;
+    top: 75px;
+    right: 3%;
+  }
+  .launch-phone {
+    width: 35%;
+    top: 0;
+    left: 8%;
+  }
+}
+
+@media (max-width: 560px) {
+  .launch-devices {
+    min-height: 350px;
+  }
+  .launch-tablet {
+    width: 79%;
+    top: 55px;
+  }
+  .launch-phone {
+    width: 37%;
+    top: 0;
+  }
+}
+
+/* Opening scene: gym continues behind the feature pillars */
+.launch-benefits {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 35px clamp(24px, 6vw, 100px) 65px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  background:
+    linear-gradient(
+      180deg,
+      rgba(3, 10, 9, .66),
+      rgba(3, 10, 9, .88)
+    ),
+    url("assets/gym-background.png") center bottom / cover no-repeat;
+}
+
+.launch-benefits article {
+  min-width: 0;
+  padding: 15px 35px;
+  text-align: center;
+  background: transparent;
+  border: 0;
+  border-right: 1px solid rgba(255,255,255,.22);
+}
+
+.launch-benefits article:last-child {
+  border-right: 0;
+}
+
+.launch-feature-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: rgba(80, 151, 109, .38);
+  color: white;
+  font-size: 2rem;
+}
+
+.launch-benefits h2 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: clamp(1.2rem, 1.7vw, 1.55rem);
+}
+
+.launch-benefits p {
+  max-width: 290px;
+  margin: 0 auto 18px;
+  color: #e0e9e2;
+  line-height: 1.55;
+}
+
+.launch-benefits article > a {
+  width: 38px;
+  height: 38px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.6);
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .launch-benefits {
+    grid-template-columns: 1fr;
+    padding: 30px 22px;
+  }
+
+  .launch-benefits article {
+    padding: 30px 15px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+  }
+
+  .launch-benefits article:last-child {
+    border-bottom: 0;
+  }
+}
+
+/* SVG feature icons */
+.launch-feature-icon svg {
+  width: 35px;
+  height: 35px;
+}
+
+/* Physical device frames */
+.launch-phone,
+.launch-tablet {
+  box-sizing: border-box;
+  background: #050706;
+  border-style: solid;
+  border-color: #25342c;
+  outline: 2px solid #060907;
+  overflow: hidden;
+  box-shadow:
+    0 35px 85px rgba(0,0,0,.75),
+    inset 0 0 0 2px rgba(255,255,255,.14);
+}
+
+.launch-phone {
+  border-width: 11px;
+  border-radius: 48px;
+}
+
+.launch-phone::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32%;
+  height: 17px;
+  background: #020403;
+  border: 1px solid #25342c;
+  border-radius: 20px;
+  z-index: 5;
+}
+
+.launch-phone::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: -13px;
+  width: 4px;
+  height: 65px;
+  background: #637067;
+  border-radius: 0 4px 4px 0;
+}
+
+.launch-tablet {
+  border-width: 12px;
+  border-radius: 32px;
+}
+
+.launch-tablet::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  width: 5px;
+  height: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #53645b;
+  z-index: 5;
+}
+
+.launch-phone img,
+.launch-tablet img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+
+/* One continuous cinematic background across the opening scene */
+.launch-scene {
+  position: relative;
+  isolation: isolate;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(2, 10, 9, .80) 0%,
+      rgba(2, 10, 9, .43) 48%,
+      rgba(2, 10, 9, .16) 100%
+    ),
+    url("assets/gym-background.png") center center / cover no-repeat;
+}
+
+.launch-scene .launch-hero {
+  background: transparent;
+}
+
+.launch-scene .launch-benefits {
+  background: transparent;
+}
+
+.launch-scene .launch-hero-overlay {
+  background: transparent;
+}
+
+.launch-scene::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: auto 0 0;
+  height: 28%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #080d0b
+  );
+  pointer-events: none;
+}
+
+/* Refined iPhone and iPad hardware */
+.launch-phone,
+.launch-tablet {
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(135deg, #77847b, #18231d 35%, #42534a 70%, #0b110e);
+  border: 5px solid #27372e;
+  outline: 1px solid rgba(190, 210, 196, .45);
+  box-shadow:
+    0 45px 90px rgba(0, 0, 0, .75),
+    0 8px 18px rgba(0, 0, 0, .5),
+    inset 0 0 0 2px rgba(210, 230, 216, .18);
+}
+
+.launch-phone {
+  padding: 7px;
+  border-radius: 49px;
+}
+
+.launch-tablet {
+  padding: 11px;
+  border-radius: 34px;
+}
+
+.launch-phone img,
+.launch-tablet img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  background: #050706;
+  border: 2px solid #050706;
+  box-sizing: border-box;
+}
+
+.launch-phone img {
+  border-radius: 37px;
+}
+
+.launch-tablet img {
+  border-radius: 20px;
+}
+
+/* The iPhone screenshot already contains its camera cutout */
+.launch-phone::before {
+  display: none;
+}
+
+/* Side buttons */
+.launch-phone::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 27%;
+  width: 4px;
+  height: 62px;
+  background: linear-gradient(#7a897e, #27362d);
+  border-radius: 0 4px 4px 0;
+}
+
+.launch-tablet::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 5px;
+  height: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #18231d;
+  box-shadow: 0 0 0 2px #3c4c42;
+  z-index: 3;
+}
+
+/* Rockstar-inspired cinematic scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(65px) scale(.97);
+  filter: blur(5px);
+  transition:
+    opacity 900ms cubic-bezier(.22, 1, .36, 1),
+    transform 1100ms cubic-bezier(.22, 1, .36, 1),
+    filter 900ms ease;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+.launch-benefits article:nth-child(2) {
+  transition-delay: 120ms;
+}
+
+.launch-benefits article:nth-child(3) {
+  transition-delay: 240ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+}
+
+/* Cinematic athlete-to-coach scrolling experience */
+.launch-story {
+  position: relative;
+  background: #080d0b;
+}
+
+.launch-story-panel {
+  position: relative;
+  min-height: 100svh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: clamp(40px, 7vw, 120px);
+  padding: 110px clamp(24px, 8vw, 140px);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.launch-story-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(
+      ellipse at 75% 45%,
+      rgba(31, 125, 71, .22),
+      transparent 55%
+    ),
+    linear-gradient(135deg, #080d0b, #14231a 65%, #080d0b);
+}
+
+#coaches::before {
+  background:
+    radial-gradient(
+      ellipse at 25% 50%,
+      rgba(39, 125, 82, .22),
+      transparent 55%
+    ),
+    linear-gradient(225deg, #080d0b, #182a20 65%, #080d0b);
+}
+
+.launch-story-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.launch-story-copy h2 {
+  margin: 22px 0;
+  color: #fff;
+  font-family: Manrope, sans-serif;
+  font-size: clamp(3rem, 5.8vw, 6.5rem);
+  line-height: 1.04;
+  letter-spacing: -.06em;
+}
+
+.launch-story-copy > p:last-child {
+  max-width: 520px;
+  color: #c4d0c8;
+  font-size: clamp(1.05rem, 1.4vw, 1.3rem);
+  line-height: 1.75;
+}
+
+.launch-story-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.launch-story-visual img {
+  display: block;
+  width: auto;
+  height: min(72svh, 740px);
+  max-width: 100%;
+  object-fit: contain;
+  border: 9px solid #293b30;
+  border-radius: 42px;
+  box-shadow: 0 45px 110px rgba(0,0,0,.7);
+  transform: rotate(5deg);
+}
+
+#coaches .launch-story-visual img {
+  transform: rotate(-5deg);
+}
+
+@media (min-width: 901px) {
+  #coaches .launch-story-copy {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  #coaches .launch-story-visual {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .launch-story-panel {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding: 90px 24px;
+  }
+
+  .launch-story-visual img {
+    height: min(58svh, 600px);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .launch-story-copy,
+  .launch-story-visual {
+    animation: story-enter linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+  }
+
+  @keyframes story-enter {
+    from {
+      opacity: 0;
+      transform: translateY(70px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Cinematic scene-to-scene scrolling */
+.launch-story-panel {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  min-height: 700px;
+  box-sizing: border-box;
+}
+
+#athletes {
+  z-index: 1;
+}
+
+#coaches {
+  z-index: 2;
+  box-shadow: 0 -35px 90px rgba(0, 0, 0, .55);
+}
+
+@media (max-height: 700px), (max-width: 900px) {
+  .launch-story-panel {
+    position: relative;
+    height: auto;
+    min-height: 100svh;
+  }
+}
+
+/* Keep the gym background throughout the cinematic scroll */
+.launch-story {
+  background: #080d0b;
+}
+
+.launch-story-panel {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 10, 8, .88),
+      rgba(3, 10, 8, .55)
+    ),
+    url("assets/gym-background.png") center / cover no-repeat;
+}
+
+.launch-story-panel::before,
+#coaches::before {
+  background: transparent;
+}
+
+#coaches {
+  background:
+    linear-gradient(
+      270deg,
+      rgba(3, 10, 8, .88),
+      rgba(3, 10, 8, .55)
+    ),
+    url("assets/gym-background.png") center / cover no-repeat;
+}
+
+/* Stationary cinematic gym background */
+html {
+  background: #080d0b;
+}
+
+body {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 10, 8, .82),
+      rgba(3, 10, 8, .52)
+    ),
+    url("assets/gym-background.png") center center / cover fixed;
+}
+
+.launch-scene,
+.launch-scene .launch-hero,
+.launch-scene .launch-benefits,
+.launch-story,
+.launch-story-panel,
+#coaches {
+  background: transparent !important;
+}
+
+.launch-story-panel::before,
+#coaches::before {
+  background: transparent !important;
+}
+
+/* Navigation stays above the scrolling content */
+header,
+.site-header,
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+/* Sliding navigation */
+.site-header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10000;
+  transition: transform 350ms ease, background 350ms ease;
+  will-change: transform;
+}
+
+.site-header.nav-hidden {
+  transform: translateY(-110%);
+}
+
+.site-header.nav-scrolled {
+  background: rgba(5, 15, 10, .92);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header {
+    transition: none;
+  }
+}
+
+/* Choose-your-story experience */
+.launch-story {
+  display: block !important;
+  background: transparent !important;
+}
+
+.story-choice {
+  min-height: 100svh;
+  padding: 130px 6vw 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.story-choice h2 {
+  color: white;
+  font-size: clamp(2.8rem, 6vw, 6rem);
+  line-height: 1.05;
+  letter-spacing: -.055em;
+  margin: 20px 0;
+}
+
+.story-choice > p:not(.launch-eyebrow) {
+  color: #c9d5cd;
+  font-size: 1.2rem;
+}
+
+.story-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: min(100%, 1100px);
+  margin-top: 55px;
+}
+
+.story-option {
+  appearance: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  min-height: 300px;
+  padding: 40px;
+  text-align: left;
+  cursor: pointer;
+  border: 1px solid rgba(130, 205, 155, .3);
+  border-radius: 24px;
+  background: rgba(5, 20, 12, .78);
+  color: white;
+  backdrop-filter: blur(14px);
+  transition: transform .35s ease, border-color .35s ease, background .35s ease;
+}
+
+.story-option:hover,
+.story-option:focus-visible {
+  transform: translateY(-9px);
+  border-color: #66e59a;
+  background: rgba(13, 46, 26, .92);
+}
+
+.story-option-label,
+.story-option-action {
+  color: #66e59a;
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.story-option strong {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: 1.1;
+}
+
+.story-option > span:nth-child(3) {
+  color: #c5d3c9;
+  line-height: 1.6;
+}
+
+.story-option-action {
+  margin-top: auto;
+}
+
+.story-experience[hidden] {
+  display: none !important;
+}
+
+.story-experience {
+  min-height: 100svh;
+  padding: 130px 8vw 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6vw;
+  align-items: center;
+  background: transparent !important;
+  animation: story-appear .7s ease both;
+}
+
+.story-experience-copy h2 {
+  color: white;
+  font-size: clamp(3rem, 5.5vw, 6rem);
+  line-height: 1.05;
+  letter-spacing: -.06em;
+  margin: 20px 0;
+}
+
+.story-experience-copy > p:not(.launch-eyebrow) {
+  color: #c9d5cd;
+  font-size: 1.2rem;
+  line-height: 1.75;
+  max-width: 520px;
+}
+
+.story-experience-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.story-experience-visual img {
+  display: block;
+  width: auto;
+  max-width: 85%;
+  max-height: 72svh;
+  object-fit: contain;
+  border: 9px solid #293b30;
+  border-radius: 42px;
+  box-shadow: 0 40px 110px rgba(0,0,0,.7);
+  transform: rotate(4deg);
+}
+
+.story-back {
+  margin-top: 35px;
+  padding: 14px 0;
+  background: transparent;
+  border: 0;
+  color: #66e59a;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@keyframes story-appear {
+  from { opacity: 0; transform: translateY(45px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 800px) {
+  .story-options,
+  .story-experience {
+    grid-template-columns: 1fr;
+  }
+
+  .story-choice {
+    padding: 110px 22px 65px;
+  }
+
+  .story-option {
+    min-height: 240px;
+    padding: 28px;
+  }
+
+  .story-experience {
+    padding: 110px 24px 70px;
+  }
+
+  .story-experience-visual img {
+    max-height: 55svh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .story-experience {
+    animation: none;
+  }
+}
+
+
+/* Feature-led cinematic stories — no repeated phone screenshots */
+.story-feature-list {
+  display: grid;
+  gap: 15px;
+  width: 100%;
+}
+
+.story-feature {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+  padding: 23px 25px;
+  border: 1px solid rgba(139, 205, 158, .22);
+  border-radius: 18px;
+  background: rgba(4, 20, 11, .75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: transform .35s ease, border-color .35s ease;
+}
+
+.story-feature:hover {
+  transform: translateX(10px);
+  border-color: rgba(102, 229, 154, .75);
+}
+
+.story-feature-number {
+  color: #66e59a;
+  font-size: .9rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.story-feature h3 {
+  color: #fff;
+  font-size: clamp(1.2rem, 1.7vw, 1.65rem);
+  margin: 0 0 8px;
+}
+
+.story-feature p {
+  color: #c4d2c8;
+  line-height: 1.55;
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .story-feature {
+    transition: none;
+  }
+}
+
+/* Sequential feature reveal during scrolling */
+@media (prefers-reduced-motion: no-preference) {
+  .story-feature {
+    animation: feature-reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+  }
+
+  @keyframes feature-reveal {
+    from {
+      opacity: 0;
+      transform: translateY(35px);
+      filter: blur(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+}
+
+/* Preserve visibility in browsers without scroll animations */
+@supports not (animation-timeline: view()) {
+  .story-feature {
+    animation: none;
+    opacity: 1;
+    filter: none;
+  }
+}
+
+/* Contact and footer readability */
+.contact-section a,
+.contact-section .contact-card a {
+  color: #145b35 !important;
+}
+
+.contact-section .contact-card {
+  color: #18271e;
+}
+
+.contact-section .contact-card p,
+.contact-section .contact-card span {
+  color: #34463a;
+}
+
+footer,
+footer p,
+footer span,
+footer a,
+.footer-legal-links a {
+  color: #e0e9e2 !important;
+}
+
+footer a:hover {
+  color: #66e59a !important;
+}
+
+/* High-contrast navigation actions */
+.site-header .launch-nav a {
+  color: #f4f8f5 !important;
+}
+
+.site-header .launch-nav a:hover {
+  color: #66e59a !important;
+}
+
+.site-header .launch-nav .launch-nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background: #66e59a !important;
+  color: #07180e !important;
+  font-weight: 800;
+  box-shadow: 0 4px 22px rgba(102, 229, 154, .25);
+}
+
+.site-header .launch-nav .launch-nav-cta:hover {
+  background: #91f5b7 !important;
+  color: #07180e !important;
+  transform: translateY(-2px);
+}
+
+
+/* Pricing section */
+.launch-pricing {
+  padding: 110px 6vw;
+  color: white;
+  background: rgba(3, 14, 8, .78);
+}
+
+.launch-pricing-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.launch-pricing-heading h2 {
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  letter-spacing: -.05em;
+  margin: 16px 0;
+}
+
+.launch-pricing-heading > p:last-child {
+  color: #c4d2c8;
+}
+
+.launch-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.launch-price-card {
+  padding: 32px 24px;
+  border: 1px solid rgba(102, 229, 154, .28);
+  border-radius: 20px;
+  background: rgba(7, 27, 15, .92);
+}
+
+.launch-price-card > p:first-child {
+  color: #66e59a;
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.launch-price-card h3 {
+  margin: 20px 0;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.launch-price {
+  color: white;
+  font-size: clamp(2rem, 2.5vw, 2.8rem);
+  font-weight: 800;
+}
+
+.launch-price span {
+  color: #b6c9bb;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.launch-price-card > p:not(:first-child) {
+  color: #c4d2c8;
+  line-height: 1.6;
+}
+
+.launch-pricing-cta {
+  display: table;
+  margin: 45px auto 0;
+  padding: 16px 32px;
+  border-radius: 12px;
+  background: #66e59a;
+  color: #07180e !important;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+  .launch-pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .launch-pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Story-specific pricing */
+.launch-price-card[hidden] {
+  display: none !important;
+}
+
+.launch-pricing-grid {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.launch-pricing.pricing-athlete .launch-pricing-grid {
+  grid-template-columns: minmax(0, 420px);
+  justify-content: center;
+}
+
+.launch-pricing.pricing-coach .launch-pricing-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 800px) {
+  .launch-pricing.pricing-coach .launch-pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Cinematic roadmap — preserve milestones */
+.roadmap-section {
+  background: transparent !important;
+  color: #f4f8f5 !important;
+}
+
+.roadmap-section h2,
+.roadmap-section h3,
+.roadmap-section strong {
+  color: #ffffff !important;
+}
+
+.roadmap-section p {
+  color: #c5d5ca !important;
+}
+
+.roadmap-section article,
+.roadmap-section li {
+  background: rgba(5, 22, 13, .86) !important;
+  border-color: rgba(102, 229, 154, .2) !important;
+}
+
+.roadmap-section article,
+.roadmap-section li {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.roadmap-section article:hover,
+.roadmap-section li:hover {
+  border-color: rgba(102, 229, 154, .65) !important;
+}

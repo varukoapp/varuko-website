@@ -16,6 +16,7 @@
   />
   <link rel="stylesheet" href="styles.css" />
   <link rel="canonical" href="https://varuko.com/" />
+  <link rel="stylesheet" href="launch.css" />
 </head>
 
 <body>
@@ -25,149 +26,214 @@
       <span>VARUKO</span>
     </a>
 
-    <nav class="site-nav" aria-label="Primary navigation">
-      <a href="#product">Product</a>
-      <a href="#roadmap">Roadmap</a>
-      <a class="web-beta-link" href="https://app.varuko.com">Web Beta Login</a>
-      <a class="nav-cta" href="#early-access">Join the Beta</a>
-    </nav>
+    <nav class="site-nav launch-nav" aria-label="Primary navigation">
+  <a href="#product">Platform</a>
+  <a href="#coaches">For Coaches</a>
+  <a href="#athletes">For Athletes</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Resources</a>
+  <a class="launch-nav-cta" href="https://app.varuko.com">Sign In / Sign Up</a>
+</nav>
   </header>
 
   <main id="top">
-    <section class="hero hero-v2">
-      <div class="hero-copy">
-        <p class="eyebrow">A connected training platform</p>
-
-        <h1>
-          Train better.<br />
-          <span>Coach smarter.</span>
-        </h1>
-
-        <p class="supporting-copy hero-summary">
-          One platform connecting athletes and trainers through structured
-          programming, measurable progress, and accountability.
+    <div class="launch-scene">
+    <section class="launch-hero" id="launch-home">
+      <div class="launch-hero-overlay"></div>
+      <div class="launch-hero-content">
+        <p class="launch-eyebrow">TRAIN. TRACK. GROW. TOGETHER.</p>
+        <h1>More Progress<br><span>Together.</span></h1>
+        <p class="launch-description">
+          The connected fitness platform for athletes and coaches.
+          Track every workout, measure real progress, and achieve more together.
         </p>
-
-        <div class="hero-actions">
-          <a class="primary-action" href="#early-access">
-            Join the Beta <span aria-hidden="true">→</span>
-          </a>
-          <a class="secondary-action web-beta-action" href="https://app.varuko.com">
-            Web Beta Login
-          </a>
-          <a class="secondary-action" href="#product">Explore Varuko</a>
+        <div class="launch-actions">
+          <a class="launch-primary" href="https://app.varuko.com">Get Started <span aria-hidden="true">→</span></a>
+          <a class="launch-secondary" href="#product">Explore the Platform</a>
         </div>
-
-        <p class="launch-note">
-          The Varuko web beta is now live for athletes and trainers.
-        </p>
       </div>
-
-      <div class="hero-mark" aria-label="Varuko brand mark">
-        <div class="mark-halo"></div>
-        <div class="mark-frame">
-          <img
-            src="assets/varuko-icon.png"
-            alt="Varuko green V logo"
-          />
+      <div class="launch-devices">
+        <div class="launch-tablet">
+          <img src="assets/store/Varuko-Athlete-iPad-13-Landscape-2732x2048.png" alt="Varuko athlete dashboard on iPad">
         </div>
-        <p>Progress. Partnership. Achievement.</p>
+        <div class="launch-phone">
+          <img src="assets/store/athlete_home_1284x2778.png" alt="Varuko athlete workout dashboard on iPhone">
+        </div>
       </div>
     </section>
 
-    <section class="benefits" aria-label="Why Varuko">
+    <section class="benefits launch-benefits" aria-label="Why Varuko">
       <article>
-        <span>01</span>
-        <h2>One connected platform.</h2>
-        <p>
-          Programming, progress, communication, and coaching tools without
-          switching between disconnected systems.
-        </p>
+        <div class="launch-feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5v11M4 9v6M17.5 6.5v11M20 9v6M6.5 12h11.0"/></svg></div>
+        <h2>Train &amp; Track</h2>
+        <p>Log workouts, plan ahead, and see real progress.</p>
+        <a href="#product" aria-label="Explore training and tracking">→</a>
       </article>
-
       <article>
-        <span>02</span>
-        <h2>Better coaching.</h2>
-        <p>
-          Assign training, manage athletes, review activity, and keep the
-          coaching relationship organized.
-        </p>
+        <div class="launch-feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M17 11a3 3 0 1 0-1-5.8M17 14a5 5 0 0 1 4 5v1"/></svg></div>
+        <h2>Find &amp; Manage Coaches</h2>
+        <p>Build your roster, assign programs, and stay connected.</p>
+        <a href="#product" aria-label="Explore coaching tools">→</a>
       </article>
-
       <article>
-        <span>03</span>
-        <h2>Measurable progress.</h2>
-        <p>
-          Turn consistent effort into useful information that athletes and
-          trainers can act on together.
-        </p>
+        <div class="launch-feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V13h4v7M10 20V9h4v11M16 20V4h4v16M3 20h18"/></svg></div>
+        <h2>Stay Accountable</h2>
+        <p>Hit goals, track consistency, and grow with your people.</p>
+        <a href="#product" aria-label="Explore progress tracking">→</a>
       </article>
     </section>
 
-    <section class="product-showcase" id="product" aria-label="Inside Varuko">
-      <div class="section-heading">
-        <p class="eyebrow">Inside Varuko</p>
-        <h2>Designed for both sides of training.</h2>
-        <p>
-          Athletes and trainers get focused experiences while working from one
-          connected platform.
-        </p>
-      </div>
+    </div>
 
-      <div class="product-layout">
-        <figure class="app-shot app-shot-primary">
-          <div class="phone-stage">
-            <img
-              src="assets/athlete-stealth.png"
-              alt="Varuko athlete home dashboard"
-            />
+    <section class="launch-story" id="product">
+  <div class="story-choice" id="choose-story">
+    <p class="launch-eyebrow">YOUR JOURNEY STARTS HERE</p>
+    <h2>How will you use Varuko?</h2>
+    <p>Choose your experience.</p>
+
+    <div class="story-options">
+      <button class="story-option" type="button" data-story="athletes">
+        <span class="story-option-label">FOR ATHLETES</span>
+        <strong>Own your progress.</strong>
+        <span>Track workouts. See results. Find your people.</span>
+        <span class="story-option-action">Explore Athlete Experience →</span>
+      </button>
+
+      <button class="story-option" type="button" data-story="coaches">
+        <span class="story-option-label">FOR COACHES</span>
+        <strong>Build better coaching.</strong>
+        <span>Program workouts. Manage athletes. Grow your business.</span>
+        <span class="story-option-action">Explore Coach Experience →</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="story-experience" id="athletes" hidden>
+    <div class="story-experience-copy">
+      <p class="launch-eyebrow">THE ATHLETE EXPERIENCE</p>
+      <h2>Every workout.<br>Every milestone.</h2>
+      <p>Log your training, follow your progress, and stay connected to the people helping you improve.</p>
+      <button class="story-back" type="button">← Choose another story</button>
+    </div>
+    <div class="story-feature-list" aria-label="Athletes features">
+<article class="story-feature">
+          <span class="story-feature-number">01</span>
+          <div>
+            <h3>Log Every Workout</h3>
+            <p>Keep your training history organized in one place.</p>
           </div>
-          <figcaption>
-            <strong>Athlete Experience</strong>
-            <span>
-              Track goals, training activity, progress, and coaching connections
-              from one personal dashboard.
-            </span>
-          </figcaption>
-        </figure>
+        </article>
+<article class="story-feature">
+          <span class="story-feature-number">02</span>
+          <div>
+            <h3>Track Your Progress</h3>
+            <p>Follow personal records, consistency, and improvement.</p>
+          </div>
+        </article>
+<article class="story-feature">
+          <span class="story-feature-number">03</span>
+          <div>
+            <h3>Find Your Coach</h3>
+            <p>Connect with the right coach for your goals.</p>
+          </div>
+        </article>
+<article class="story-feature">
+          <span class="story-feature-number">04</span>
+          <div>
+            <h3>Stay Accountable</h3>
+            <p>Train alongside friends and stay connected.</p>
+          </div>
+        </article>
+    </div>
+  </div>
 
-        <div class="supporting-shots">
-          <figure class="app-shot">
-            <div class="phone-stage">
-              <img
-                src="assets/trainer-stealth.png"
-                alt="Varuko trainer home dashboard"
-              />
-            </div>
-            <figcaption>
-              <strong>Trainer Experience</strong>
-              <span>
-                Manage athletes, assign workouts, review activity, and organize
-                coaching operations.
-              </span>
-            </figcaption>
-          </figure>
+  <div class="story-experience" id="coaches" hidden>
+    <div class="story-experience-copy">
+      <p class="launch-eyebrow">THE COACH EXPERIENCE</p>
+      <h2>Coach with clarity.<br>Grow with purpose.</h2>
+      <p>Manage your athletes, assign workouts, and keep your coaching operation connected.</p>
+      <button class="story-back" type="button">← Choose another story</button>
+    </div>
+    <div class="story-feature-list" aria-label="Coaches features">
+<article class="story-feature">
+          <span class="story-feature-number">01</span>
+          <div>
+            <h3>Build Programs</h3>
+            <p>Create and assign workouts for your athletes.</p>
+          </div>
+        </article>
+<article class="story-feature">
+          <span class="story-feature-number">02</span>
+          <div>
+            <h3>Manage Athletes</h3>
+            <p>Keep schedules, training plans, and clients organized.</p>
+          </div>
+        </article>
+<article class="story-feature">
+          <span class="story-feature-number">03</span>
+          <div>
+            <h3>Monitor Progress</h3>
+            <p>Follow athlete performance and training consistency.</p>
+          </div>
+        </article>
+<article class="story-feature">
+          <span class="story-feature-number">04</span>
+          <div>
+            <h3>Stay Connected</h3>
+            <p>Communicate with athletes from one platform.</p>
+          </div>
+        </article>
+    </div>
+  </div>
+</section>
 
-          <figure class="app-shot">
-            <div class="phone-stage">
-              <img
-                src="assets/roster-coaches.png"
-                alt="Varuko trainer discovery screen"
-              />
-            </div>
-            <figcaption>
-              <strong>Trainer Discovery</strong>
-              <span>
-                Discover coaches, compare fit, and connect around specific
-                training goals.
-              </span>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
+<section class="launch-pricing" id="pricing">
+  <div class="launch-pricing-heading">
+    <p class="launch-eyebrow">SIMPLE, TRANSPARENT PRICING</p>
+    <h2>Simple, Transparent Pricing</h2>
+    <p>Find the plan that fits your needs. Every plan starts with a free trial.</p>
+  </div>
 
-    <section class="early-access-section" id="early-access">
+  <div class="launch-pricing-grid">
+    <article class="launch-price-card">
+      <p>ATHLETE</p>
+      <h3>Train your way.</h3>
+      <div class="launch-price">$1.99 <span>/ month</span></div>
+      <p>30 days free</p>
+      <p>Workout logging, progress tracking, and accountability.</p>
+    </article>
+
+    <article class="launch-price-card">
+      <p>INDEPENDENT COACH</p>
+      <h3>Start coaching.</h3>
+      <div class="launch-price">$39.99 <span>/ month</span></div>
+      <p>60 days free · Up to 5 athletes</p>
+      <p>Programming, athlete management, and progress monitoring.</p>
+    </article>
+
+    <article class="launch-price-card">
+      <p>PRO COACH</p>
+      <h3>Grow your roster.</h3>
+      <div class="launch-price">$59.99 <span>/ month</span></div>
+      <p>60 days free · Up to 15 athletes</p>
+      <p>More capacity for your coaching business.</p>
+    </article>
+
+    <article class="launch-price-card">
+      <p>STUDIO COACH</p>
+      <h3>Coach at scale.</h3>
+      <div class="launch-price">$109.99 <span>/ month</span></div>
+      <p>60 days free · Up to 30 athletes</p>
+      <p>Manage a larger athlete roster in one place.</p>
+    </article>
+  </div>
+
+  <a class="launch-pricing-cta" href="https://app.varuko.com">
+    Sign In / Sign Up
+  </a>
+</section>
+
+<section class="early-access-section" id="early-access">
       <div class="early-access-intro">
         <p class="eyebrow">Private beta</p>
         <h2>Put Varuko to work.</h2>
@@ -413,5 +479,6 @@
   </footer>
 
   <script type="module" src="script.js"></script>
+<script src="launch-scroll.js" defer></script>
 </body>
 </html>
